@@ -18,6 +18,9 @@ target/
 .springBeans
 .sts4-cache
 
+### Metals ###
+.metals
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/

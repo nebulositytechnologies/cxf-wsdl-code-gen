@@ -72,7 +72,11 @@
                                         src/main/resources/RetailWebService.wsdl
                                     </wsdl>
                                     <extraargs>
-                                        <extraarg>-xjc-Xts</extraarg>
+                                        <extraarg>-xjc-Xts:style:org.apache.cxf.xjc.runtime.JAXBToStringStyle.MULTI_LINE_STYLE</extraarg>
+                                        <extraarg>-xjc-Xjavadoc</extraarg>
+                                        <extraarg>-xjc-Xdv:optional</extraarg>
+                                        <extraarg>-xjc-Xbgi</extraarg>
+                                        <extraarg>-xjc-Xproperty-listener</extraarg>
                                     </extraargs>
                                 </wsdlOption>
                             </wsdlOptions>
@@ -91,6 +95,21 @@
                     <dependency>
                         <groupId>org.apache.cxf.xjcplugins</groupId>
                         <artifactId>cxf-xjc-pl</artifactId>
+                        <version>4.0.0</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.cxf.xjcplugins</groupId>
+                        <artifactId>cxf-xjc-javadoc</artifactId>
+                        <version>4.0.0</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.cxf.xjcplugins</groupId>
+                        <artifactId>cxf-xjc-dv</artifactId>
+                        <version>4.0.0</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.apache.cxf.xjcplugins</groupId>
+                        <artifactId>cxf-xjc-boolean</artifactId>
                         <version>4.0.0</version>
                     </dependency>
                 </dependencies>
